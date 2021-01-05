@@ -369,6 +369,26 @@ Rulesets:
     Mode: 1 # B-Side
   - SID: "SID of level"
     Mode: 2 # C-Side
+Backgrounds: 
+  - Texture: "directory"
+    CoverBottom: 100 # the height in pixels from the lowest transparent pixel to the highest
+    Opaque: {true/false}
+    LoopX: {true/false}
+    LoopY: {true/false}
+    FlipX: {true/false}
+    FlipY: {true/false}
+    NeedsColor: {true/false}
+    ScrollFactorX: 1.5 # 1 is default, 0 is none, anything above 1 is more scroll
+    ScrollFactorY: 0
+    ProvidesWind: {true/false}
+    Alpha: 0.5 # opacity of the styleground
+    SpeedX: 2
+    SpeedY: 3
+    OffX: 15 # offset
+    OffY: 7 
+BgEffects:
+  - Effect: "directory"
+    BlendMode: "additive"
 ```
 
 The CollectableNames are the names of the entities which should be considered as collectables, i.e. valid places to put strawberries, keys, gems. The music tracks are fmod event names, for example `"event:/music/lvl1/main"`.
